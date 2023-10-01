@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Vazirmatn:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazirmatn;
+  background-color: #3d51b4;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 120px;
+  padding: 16px 32px;
+}
+
+.add-user-section {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.heading {
+  background-color: #f7f7f7;
+  font-size: 1.8rem;
+  font-weight: 400;
+  word-spacing: -2px;
+  color: #212b8a;
+  padding: 8px 16px;
+  border-radius: 4px 4px 0 0;
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 18px;
+  width: 400px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.add-user-form label {
+  font-size: 1rem;
+}
+.add-user-form input {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+.add-user-form input:focus {
+  outline: none;
+}
+
+.btn {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input {
+  font-family: inherit;
+}
+
+.btn-submit {
+  background-color: #3d51b4;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 6px 0;
+  border-radius: 4px;
+}
