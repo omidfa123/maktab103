@@ -75,15 +75,19 @@ const renderUserList = (userList: UserList[]): void => {
   userList.map(user =>
     list?.insertAdjacentHTML(
       'beforeend',
-      `<li class="">
-        <span class="">${user.tel}</span>
-        <div>
-          <h5 class="mb-1">${user.name} ${user.Lname}</h5>
-          <p class="mb-0">${user.email}
-          </p>
-          <button class="" id="${user.id}" data-label="delete" >Delete</button>
-          <button class="" id="${user.id}" data-label="edit">Edit</button>
-          </div>
+      `
+         <li class="list-body">
+            <button id="${user.id}" data-label="delete" class="btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <button id="${user.id}" data-label="edit"  class="btn">
+              <ion-icon name="create-outline"></ion-icon>
+            </button>
+            <span>${userList.length}</span>
+            <span>${user.name}</span>
+           <span>${user.Lname}</span>
+           <span>${user.email}</span>
+           <span>${user.tel}</span>
           </li>
           `
     )

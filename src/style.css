@@ -22,6 +22,8 @@ body {
   display: flex;
   gap: 120px;
   padding: 16px 32px;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .add-user-section {
@@ -83,4 +85,42 @@ input {
   font-size: 1.2rem;
   padding: 6px 0;
   border-radius: 4px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.list {
+  background-color: #fff;
+  padding: 32px 16px;
+  border-radius: 4px;
+}
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-top: 1px solid #dededf;
+  border-bottom: 2px solid #dededf;
+  padding: 4px 0;
+}
+.list-header span {
+  font-weight: 700;
+}
+.list-email {
+  margin: 0 60px;
+}
+.list-body {
+  display: flex;
+  padding: 4px 0;
+  justify-content: space-between;
+}
+.list-body:nth-child(2) {
+  flex-basis: 92px;
+  text-align: center;
+}
+ion-icon {
+  font-size: 1.3rem;
+  pointer-events: none;
 }
